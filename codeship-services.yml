@@ -1,0 +1,6 @@
+calculator:
+  build:
+    image: calculator
+    dockerfile: Dockerfile
+
+#build:

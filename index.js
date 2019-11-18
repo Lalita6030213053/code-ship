@@ -11,4 +11,4 @@ Sentry.configureScope(function(scope) {
    
 const calculator = require('./calculate');
 
-myUndefinedFunction();
+myFunction();

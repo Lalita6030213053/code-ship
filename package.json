@@ -1,15 +1,25 @@
 {
-  "name": "codeship",
+  "name": "calculate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "calculate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest && codecov",
+    "start": "babel-node server.js",
+    "codecov": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test && codecov"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lalita6030213053/code-ship.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sentry/node": "^5.7.1",
     "jest": "^24.9.0"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }

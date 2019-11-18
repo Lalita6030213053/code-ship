@@ -9,6 +9,6 @@ Sentry.init({ dsn: 'https://86dc755e21594be2b8bb81c16247b07e@sentry.io/1824767' 
 //     });
 //    });
    
-// const calculator = require('./calculate');
+const calculator = require('./calculate');
 
 myUndefinedFunction();

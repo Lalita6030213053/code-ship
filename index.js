@@ -5,7 +5,7 @@ Sentry.configureScope(function(scope) {
     scope.setTag("my-tag", "6030213040");
     scope.setUser({
       email: "john.doe@example.com",
-      username: 'Thanakrit Thongkhamdee'
+      username: 'Lalita Sathansat'
     });
    });
    
